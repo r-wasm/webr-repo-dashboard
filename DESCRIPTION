@@ -1,0 +1,7 @@
+Title: WebR binary R package repository
+Author: George Stagg <george.stagg@posit.co>
+AuthorUrl: https://docs.r-wasm.org/
+License: MIT
+DisplayMode: Normal
+Tags: webr
+Type: Shiny
