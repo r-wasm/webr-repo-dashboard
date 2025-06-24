@@ -5,7 +5,7 @@ library(DT)
 
 source_base <- "https://cran.r-project.org/web/packages/"
 contrib_base <- "https://repo.r-wasm.org/bin/emscripten/contrib/"
-versions <- c("4.2.x" = "4.2", "4.3.x" = "4.3", "4.3.3" = "4.3.3", "4.4.x" = "4.4")
+versions <- c("4.2.x" = "4.2", "4.3.x" = "4.3", "4.3.3" = "4.3.3", "4.4.x" = "4.4", "4.5.x" = "4.5")
 
 ui <- page_sidebar(
   title = h1("WebR binary R package repository"),
