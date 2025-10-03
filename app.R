@@ -5,7 +5,7 @@ library(DT)
 
 source_base <- "https://cran.r-project.org/web/packages/"
 contrib_base <- "https://repo.r-wasm.org/bin/emscripten/contrib/"
-versions <- c("4.2.x" = "4.2", "4.3.x" = "4.3", "4.3.3" = "4.3.3", "4.4.x" = "4.4")
+versions <- c("4.2.x" = "4.2", "4.3.x" = "4.3", "4.3.3" = "4.3.3", "4.4.x" = "4.4", "4.5.x" = "4.5")
 
 ui <- page_sidebar(
   title = h1("WebR binary R package repository"),
@@ -20,11 +20,11 @@ ui <- page_sidebar(
   p(
     class = "lead",
     "This CRAN-like repository contains R packages compiled to WebAssembly for use with webR. Set this page's URL as the named",
-    code("repos"), "argument when using the", code("webr::install()"),
+    code("repos"), "argument when using the", code("install.packages()"),
     "command to use this repository as the source for downloading binary R packages."
   ),
   p(
-    "By default, ", code("webr::install()"), "will use the public repository hosted at",
+    "By default, ", code("install.packages()"), "will use the public repository hosted at",
     a(href = "https://repo.r-wasm.org/", "https://repo.r-wasm.org/"),
     ". See the", a(href = "https://docs.r-wasm.org/webr/latest/packages.html", "webR documentation"),
     "for further information about webR."
